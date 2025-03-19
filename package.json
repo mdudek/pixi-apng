@@ -1,0 +1,50 @@
+{
+  "name": "@mdudek/pixi-apng",
+  "version": "1.0.0",
+  "description": "Let pixi.js support apng images",
+  "main": "dist/lib/pixiApng.js",
+  "types": "dist/lib/pixiApng.d.ts",
+  "source": "src/index.ts",
+  "scripts": {
+    "build": "rimraf ./dist && webpack --mode development --env minify=true --env library=true",
+    "build-demo": "rimraf ./dist && webpack --mode development --env minify=true",
+    "start-demo": "webpack serve --no-client-overlay --mode development --env minify=true",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish": "npm publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdudek/pixi-apng.git"
+  },
+  "keywords": [
+    "pixi",
+    "apng",
+    "png",
+    "canvas"
+  ],
+  "author": "michael.dudek@centrum.cz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mdudek/pixi-apng/issues"
+  },
+  "homepage": "https://github.com/mdudek/pixi-apng#readme",
+  "dependencies": {
+    "pako": "2.1.0",
+    "pixi.js": "^8.8.1",
+    "typescript-declaration-webpack-plugin": "^0.3.0"
+  },
+  "devDependencies": {
+    "@types/pako": "2.0.3",
+    "copy-webpack-plugin": "^13.0.0",
+    "css-minimizer-webpack-plugin": "7.0.2",
+    "html-loader": "5.1.0",
+    "html-webpack-plugin": "5.6.3",
+    "rimraf": "3.0.2",
+    "terser-webpack-plugin": "5.3.14",
+    "ts-loader": "9.5.2",
+    "typescript": "5.8.2",
+    "webpack": "5.98.0",
+    "webpack-cli": "6.0.1",
+    "webpack-dev-server": "5.2.0"
+  }
+}

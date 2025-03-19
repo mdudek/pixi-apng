@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+        rel="icon" type="image/x-icon">
+  <title>pixi-apng demo</title>
+</head>
+<body>
+  <button onclick="apng.play()">play</button>
+  <button onclick="apng.play(3)">Play 3 times</button>
+  <button onclick="apng.stop()">stop</button>
+  <button onclick="apng.currentFrame = 0">Jump to the first frame</button>
+  <button onclick="apng.currentFrame = apng.framesCount - 1">Jump to the last frame</button>
+  <button onclick="alert(apng.duration)">get Duration</button>
+  <button onclick="alert(apng.framesCount)">get getFrames num</button>
+  <hr>
+</body>
+</html>
